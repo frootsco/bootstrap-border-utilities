@@ -3,34 +3,55 @@
 
 // Responsive border utilities
 //$border-width // bootstrap/_variabes.scss
-$border-directions: (
-    left: 'left',
-    right: 'right',
-    top: 'top',
-    bottom: 'bottom'
-);
+$border-width-x: $border-width;
+$border-width-y: $border-width;
 $border-color: rgba($black,.1);
 $border-style: solid;
-$border-str: $border-width $border-style $border-color;
+$borders: (
+    0: (
+        x: 0,
+        y: 0
+    ),
+    1: (
+        x: $border-width-x,
+        y: $border-width-y,
+    ),
+    2: (
+        x: ($border-width-x * 2),
+        y: ($border-width-y * 2),
+    ),
+    3: (
+        x: ($border-width-x * 3),
+        y: ($border-width-y * 3),
+    )
+);
 
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-.border {
-    border: $border-str;
-}
-@each $dr in map-keys($border-directions) {
-    .border-#{$dr} { border-#{$dr}: $border-str; }
-}
-@each $bp in map-keys($grid-breakpoints) {
-    @include media-breakpoint-up($bp) {
-        .border-#{$bp}-up { border: $border-str; }
-        @each $dr in map-keys($border-directions) {
-            .border-#{$dr}-#{$bp}-up { border-#{$dr}: $border-str; }
-        }
-    }
-    @include media-breakpoint-down($bp) {
-        .border-#{$bp}-down { border: $border-str; }
-        @each $dr in map-keys($border-directions) {
-            .border-#{$dr}-#{$bp}-down { border-#{$dr}: $border-str; }
+        @each $index, $value in $borders {
+            $value-x: map-get($value, x);
+            $value-y: map-get($value, y);
+
+            .b#{$infix}-#{$index} {
+                border-left:          $value-x $border-style $border-color;
+                border-right:         $value-x $border-style $border-color;
+                border-top:           $value-y $border-style $border-color;
+                border-bottom:        $value-y $border-style $border-color;
+            }
+            .bl#{$infix}-#{$index} { border-left:   $value-x $border-style $border-color; }
+            .br#{$infix}-#{$index} { border-right:  $value-x $border-style $border-color; }
+            .bt#{$infix}-#{$index} { border-top:    $value-y $border-style $border-color; }
+            .bb#{$infix}-#{$index} { border-bottom: $value-y $border-style $border-color; }
+            .bx#{$infix}-#{$index} {
+                border-left:    $value-x $border-style $border-color;
+                border-right:   $value-x $border-style $border-color;
+            }
+            .by#{$infix}-#{$index} {
+                border-top:      $value-x $border-style $border-color;
+                border-bottom:   $value-x $border-style $border-color;
+            }
         }
     }
 }
