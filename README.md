@@ -1,5 +1,5 @@
 # bootstrap-border-utilities
-responsive border utilities for bootrap v4.0.0-alpha.6
+responsive border utilities for bootstrap v4.0.0-alpha.6
 
 
 ## notation
