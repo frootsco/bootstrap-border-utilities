@@ -4,7 +4,7 @@ responsive border utilities for bootstrap v4.0.0-alpha.6
 
 ## notation
 ```
-b   - border
+b  - border
 ```
 ```
 t  - top
@@ -33,7 +33,7 @@ y  - top + bottom
 }
 
 
-@edia (min-width: 992px) {
+@media (min-width: 992px) {
     .bb-lg-3 {
         border-bottom: ($border-width-y * 3) $border-style $border-color;
     }
