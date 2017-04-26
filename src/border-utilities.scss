@@ -1,0 +1,36 @@
+@import './vendor/bootstrap/variables';
+@import './vendor/bootstrap/mixins';
+
+// Responsive border utilities
+//$border-width // bootstrap/_variabes.scss
+$border-directions: (
+    left: 'left',
+    right: 'right',
+    top: 'top',
+    bottom: 'bottom'
+);
+$border-color: rgba($black,.1);
+$border-style: solid;
+$border-str: $border-width $border-style $border-color;
+
+
+.border {
+    border: $border-str;
+}
+@each $dr in map-keys($border-directions) {
+    .border-#{$dr} { border-#{$dr}: $border-str; }
+}
+@each $bp in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($bp) {
+        .border-#{$bp}-up { border: $border-str; }
+        @each $dr in map-keys($border-directions) {
+            .border-#{$dr}-#{$bp}-up { border-#{$dr}: $border-str; }
+        }
+    }
+    @include media-breakpoint-down($bp) {
+        .border-#{$bp}-down { border: $border-str; }
+        @each $dr in map-keys($border-directions) {
+            .border-#{$dr}-#{$bp}-down { border-#{$dr}: $border-str; }
+        }
+    }
+}

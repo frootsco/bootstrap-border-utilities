@@ -1,0 +1,4 @@
+.git
+/src/*
+!/src/border-utilities.scss
+

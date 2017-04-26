@@ -1,0 +1,227 @@
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-left {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-right {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-xs-up {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-left-xs-up {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-right-xs-up {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-top-xs-up {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-bottom-xs-up {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 575px) {
+  .border-xs-down {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-left-xs-down {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-right-xs-down {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-top-xs-down {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-bottom-xs-down {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 576px) {
+  .border-sm-up {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-left-sm-up {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-right-sm-up {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-top-sm-up {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-bottom-sm-up {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 767px) {
+  .border-sm-down {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-left-sm-down {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-right-sm-down {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-top-sm-down {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-bottom-sm-down {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 768px) {
+  .border-md-up {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-left-md-up {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-right-md-up {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-top-md-up {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-bottom-md-up {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 991px) {
+  .border-md-down {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-left-md-down {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-right-md-down {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-top-md-down {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-bottom-md-down {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 992px) {
+  .border-lg-up {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-left-lg-up {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-right-lg-up {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-top-lg-up {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-bottom-lg-up {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1199px) {
+  .border-lg-down {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-left-lg-down {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-right-lg-down {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-top-lg-down {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-bottom-lg-down {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 1200px) {
+  .border-xl-up {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-left-xl-up {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-right-xl-up {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-top-xl-up {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .border-bottom-xl-up {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+.border-xl-down {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-left-xl-down {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-right-xl-down {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-top-xl-down {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-bottom-xl-down {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
